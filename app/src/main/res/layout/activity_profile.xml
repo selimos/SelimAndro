@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Profile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:baselineAligned="false"
+            android:text="Profile"
+            android:textColor="#111111"
+            android:textSize="70dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/profile"/>
+        <Button
+            android:id="@+id/choose"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:text="@string/choose"
+            android:background="#289BAA"/>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="#289BAA"
+            android:text="@string/Add" />
+
+
+
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/menu"
+         />
+
+
+</RelativeLayout>
